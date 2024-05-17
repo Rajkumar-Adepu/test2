@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mysms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:icon="@drawable/sameer1"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.mysms.MainScreen"
+            android:label="@string/app_name"
+            android:theme="@drawable/icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mysms.Main"
+            android:label="@string/app_name"
+            android:theme="@drawable/icon" >
+            <intent-filter>
+                <action android:name="com.mysms.MAINSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mysms.MessageSend"
+            android:label="@string/app_name"
+            android:theme="@drawable/icon" >
+            <intent-filter>
+                <action android:name="com.mysms.SENDINGMESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.mysms.SmsReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.mysms.SendSms"
+            android:label="@string/app_name"
+            android:theme="@drawable/icon" >
+            <intent-filter>
+                <action android:name="com.mysms.SENDINGTOMOBILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mysms.inbox" >
+        </activity>
+        <activity android:name="com.mysms.MessageSending" />
+        <activity android:name="com.mysms.Messages" />
+        <activity android:name="com.mysms.MessageContent" />
+        <activity android:name="com.mysms.ContactsAutoComplete" />
+        <activity android:name="com.mysms.displayHistory" />
+        <activity
+            android:name="com.mysms.PopActivity"
+            android:label="Message Content"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.mysms.CreateGroup" />
+        <activity android:name="com.mysms.SendBulkSms" />
+        <activity
+            android:name="com.mysms.CreateNewGroup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.mysms.DeleteGroup"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.mysms.InboxActivity"
+            android:label="@string/title_activity_inbox" >
+        </activity>
+        <activity
+            android:name="com.mysms.MessagesActivity"
+            android:label="@string/title_activity_messages" >
+        </activity>
+        <activity
+            android:name="com.mysms.DecryptActivity"
+            android:label="@string/title_activity_decrypt" >
+        </activity>
+    </application>
+
+    <uses-sdk android:minSdkVersion="3" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+</manifest>

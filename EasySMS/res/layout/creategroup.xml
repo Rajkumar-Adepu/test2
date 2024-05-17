@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/widget30"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/thk"
+>
+<ListView
+android:id="@+id/creategrouplist"
+android:layout_width="wrap_content"
+android:layout_height="23px"
+android:layout_x="43dip"
+ android:layout_y="165dip"
+>
+</ListView>
+</AbsoluteLayout>

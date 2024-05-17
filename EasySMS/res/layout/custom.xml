@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout android:id="@+id/linearLayout1"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent" 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical">
+
+          <LinearLayout android:layout_height="wrap_content"
+           android:id="@+id/linearLayout2" android:layout_width="match_parent"
+           android:orientation="horizontal">
+           
+             <TextView 
+             android:text="NO UPDATIONS SO FAR."
+        android:paddingLeft="20px"
+        android:paddingTop="10px"
+        android:textSize="12px"
+         android:id="@+id/numberr" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content">
+         
+         </TextView>
+         
+               <TextView 
+      android:layout_gravity="right"
+      android:paddingLeft="40px"
+        android:paddingTop="10px"
+        
+        android:textSize="12px"
+         android:id="@+id/msg" 
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content">
+         
+         </TextView>
+         
+           </LinearLayout>
+                  
+      
+          <View android:id="@+id/view1"
+           android:layout_width="wrap_content" 
+           android:layout_height="1px"
+           android:background="#ffffff"></View>
+         
+    </LinearLayout>

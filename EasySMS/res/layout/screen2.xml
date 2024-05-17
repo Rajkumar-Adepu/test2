@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@drawable/ii"
+>
+
+<Button
+android:id="@+id/send"
+android:layout_width="50px"
+android:layout_height="40px"
+android:background="@drawable/button9"
+android:layout_x="250px"
+android:layout_y="240px"
+ android:textSize="14sp"
+ android:textStyle="italic"
+ android:typeface="serif"
+>
+</Button>
+
+ <MultiAutoCompleteTextView 
+                        android:id="@+id/contacts" 
+                        android:textSize="14sp"
+                        android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+                       
+                        android:layout_weight="1"
+                        android:layout_x="1px"
+                        android:hint="Phone Number:"
+                        android:textColor="#ff3e3e47"
+                        android:textStyle="italic"
+                        android:completionThreshold="1"
+android:layout_y="20px" />
+<EditText
+android:id="@+id/msg"
+android:layout_width="323px"
+android:layout_height="160px"
+android:textStyle="italic"
+android:textColor="#ff3e3e47"
+android:layout_x="-2px"
+android:layout_y="82px"
+
+android:textSize="14sp"
+android:hint="Type Message unlimited char:"
+android:typeface="serif"
+android:text=""
+>
+</EditText>
+<TextView
+android:id="@+id/chars"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+android:layout_x="286px"
+android:layout_y="63px"
+>
+</TextView>
+<TextView
+android:id="@+id/widget32"
+android:layout_width="wrap_content"
+android:layout_height="19px"
+android:text="No.Of Chars:"
+android:layout_x="202px"
+android:layout_y="62px"
+>
+</TextView>
+
+
+</AbsoluteLayout>

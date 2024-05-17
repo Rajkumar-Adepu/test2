@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollView1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/it"
+    android:layout_height="fill_parent"
+    android:layout_x="84dp"
+    android:layout_y="23dp" >
+
+  
+
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+
+
+>
+<TextView
+android:id="@+id/widget28"
+android:layout_width="208px"
+android:layout_height="57px"
+android:text="Instructions"
+android:textSize="30sp"
+android:typeface="serif"
+android:textStyle="bold"
+android:textColor="#ffdd1919"
+android:gravity="center"
+android:layout_x="42px"
+android:layout_y="32px"
+>
+</TextView>
+<TextView
+android:id="@+id/widget29"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="@string/instruction1"
+android:layout_x="5px"
+android:layout_y="102px"
+>
+</TextView>
+<TextView
+android:id="@+id/widget30"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="@string/instruction2"
+android:typeface="serif"
+android:layout_x="5px"
+android:layout_y="146px"
+>
+</TextView>
+<TextView
+android:id="@+id/widget30"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:text="@string/instruction3"
+android:typeface="serif"
+android:layout_x="5px"
+android:layout_y="200px"
+>
+</TextView>
+<Button
+android:id="@+id/start"
+android:layout_width="85px"
+android:layout_height="46px"
+android:background="@drawable/inbox"
+ android:text="Quick Sms"
+   android:textStyle="bold"
+    android:textColor="#ffffff"
+android:layout_x="237px"
+ android:layout_y="385px"
+
+>
+</Button>
+<Button
+android:id="@+id/history"
+android:layout_width="85px"
+android:layout_height="46px"
+android:background="@drawable/inbox"
+ android:text="Sent Items"
+   android:textStyle="bold"
+    android:textColor="#ffffff"
+android:layout_x="157px"
+ android:layout_y="385px"
+
+>
+</Button>
+<Button
+android:id="@+id/group"
+android:layout_width="85px"
+android:layout_height="46px"
+android:background="@drawable/inbox"
+ android:text="Groups"
+   android:textStyle="bold"
+    android:textColor="#ffffff"
+android:layout_x="77px"
+ android:layout_y="385px"
+
+></Button>
+<Button android:background="@drawable/inbox"
+ android:text="Group Sms"
+   android:textStyle="bold"
+    android:textColor="#ffffff"
+  android:id="@+id/sendbulksms"
+  android:layout_width="85px"
+android:layout_height="46px"
+    android:layout_y="385px"
+     android:layout_x="-2px">
+     </Button>
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="351dp"
+    android:layout_height="wrap_content"
+    android:layout_x="-3dp"
+    android:layout_y="232dp"
+    android:text="Inbox" />
+   
+</AbsoluteLayout>
+</ScrollView>
